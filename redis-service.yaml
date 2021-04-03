@@ -6,6 +6,7 @@ metadata:
     name: redis-service
     app: demo-voting-app
 spec:
+  type: LoadBalancer
   ports:
     - port:  6397
       targetPort: 6379
